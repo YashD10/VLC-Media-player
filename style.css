@@ -1,0 +1,88 @@
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+header{
+    /* background-color: aqua; */
+    height: 5rem;
+}
+
+.titlebar{
+    height: 50%;
+    /* outline: 2px solid blue; */
+    /* border-bottom: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.titleimage{
+    height: 60%;
+}
+
+.titletext{
+    font-size: 1rem;
+}
+.menu{
+    position: relative;
+}
+.menu-items{
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 2px;
+    width: 6rem;
+    display: none;
+}
+
+.menu:hover{
+    background-color: lightblue ;
+}
+
+.menu:hover .menu-items{
+    display: block;
+}
+
+.menu-items:hover li:hover{
+    background-color: gray;
+}
+
+li{
+    padding: 0.25rem;
+}
+
+.videoInput{
+    display: none;
+}
+
+.menu-bar{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    height: 50%;
+    align-items: center;
+}
+
+main{
+    background-color: black;
+    height: calc(100vh - 8rem);
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer{
+    height: 3rem;
+    background-color: rgb(238, 238, 238);
+}
+
+.toast{
+    color: white;
+    /* background-color: black; */
+    font-size: 2rem;
+    position: fixed;
+    top: 99px;
+    right: 47px;
+    display: hidden;
+}
